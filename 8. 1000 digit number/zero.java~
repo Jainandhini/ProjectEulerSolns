@@ -1,0 +1,6 @@
+class zero{
+  public static void main(String s[]){
+    String subst="1111110000";
+    System.out.println(subst.lastIndexOf("0"));
+  }
+}

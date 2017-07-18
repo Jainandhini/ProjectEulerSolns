@@ -1,0 +1,44 @@
+import java.io.*;
+import java.math.BigInteger;
+
+class FactorialSum{
+  //long f=1,product=1;
+  BigInteger product=BigInteger.valueOf(1);
+  BigInteger SUM=BigInteger.ZERO;
+  public BigInteger calcFSum(long n){
+    
+    if(n==1){
+      return BigInteger.valueOf(1);
+    }
+    else{
+      //System.out.println("prod: "+product);
+      product=BigInteger.valueOf(n).multiply(calcFSum(n-1));
+    }
+    System.out.println(n +"'s prod: "+product);
+    
+    BigInteger temp=BigInteger.valueOf(1);
+    
+    while(!temp.equals(0)){
+      temp=product.mod(BigInteger.valueOf(10));
+      SUM.add(temp);
+    }
+    
+    return SUM;
+  }
+  
+  public  static void main(String s[]) throws Exception{
+    FactorialSum f=new FactorialSum();
+    long n;
+    BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+    System.out.println("Enter number:");
+    n=Long.parseLong(br.readLine());
+    if(n==0)
+      System.out.println(0);
+    else
+      System.out.println(f.calcFSum(n));
+   // f.calcSum();
+  }
+}
+    
+      
+        
