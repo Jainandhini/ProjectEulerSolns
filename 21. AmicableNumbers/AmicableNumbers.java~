@@ -1,0 +1,16 @@
+import java.io.*;
+
+class AmicableNumbers{
+  
+  public void findAmicableNumbers(int limit){
+  }
+  public long calcSumAmicableNumbers(){
+    
+    return sumOfAmicableNumbers;
+  }
+  public static void main(String args[]){
+    AmicableNumbers an=new AmicableNumbers();
+    an.findAmicableNumbers(100);
+    System.out.println("Sum: "+an.calcSumAmicableNumbers());
+    
+  }

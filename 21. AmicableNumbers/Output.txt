@@ -1,0 +1,12 @@
+> run AmicableNumbers
+i: 6368 sumOfFactors: 6232  amicableSum: 6368
+i: 6232 sumOfFactors: 6368  amicableSum: 6232
+i: 5564 sumOfFactors: 5020  amicableSum: 5564
+i: 5020 sumOfFactors: 5564  amicableSum: 5020
+i: 2924 sumOfFactors: 2620  amicableSum: 2924
+i: 2620 sumOfFactors: 2924  amicableSum: 2620
+i: 1210 sumOfFactors: 1184  amicableSum: 1210
+i: 1184 sumOfFactors: 1210  amicableSum: 1184
+i: 284 sumOfFactors: 220  amicableSum: 284
+i: 220 sumOfFactors: 284  amicableSum: 220
+Sum: 31626
